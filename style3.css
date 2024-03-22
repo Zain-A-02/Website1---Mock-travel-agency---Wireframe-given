@@ -1,0 +1,79 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    min-height: 100vh; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    background-image: url(./Background2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    background-color: #99CCFF;
+    box-shadow: 3px 3px 5px rgba(red, green, blue, alpha);
+}
+/* UNORDERED LIST SPANS ENTIRETY OF WEBPAGE HORIZONTALLY */
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* NAV BAR IS COLOURED, CONTENTS ARE AT THE END OF THE PAGE AND CENTRE OF ITS BOX */
+    /* height: ; */
+
+}
+
+nav li {
+    height: 50px;
+}
+
+/* ADJUSTS LINKS */
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    /* REMOVES UNDERLINE */
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+}
+
+/* ALIGNS ONLY FIRST IN LIST TO THE LEFT*/
+nav li:first-child {
+    margin-right: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.paragraph1 {
+    /* MARGIN AUTO BEFORE DISPLAY BLOCKING SO THAT IT RESULTS IN 0 AND THE FOLLOWING COMMANDS CAN BE DONE */
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+}

@@ -1,0 +1,230 @@
+
+/* COLOUR PALLETTE
+#FFFDFA
+#C4BEB5
+#C1730E
+#4D693A
+#2F332D
+#1B1E18 */
+
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* DEFAULTS ENTIRE PAGE AND RESULTING TABLES AS 0 MARGIN AND PADDING, MAKING FORMATTING EASIER */
+* {
+    margin: 0px;
+    padding: 0px;
+    /* ANY ELEMENTS SIZE WILL NOT AFFECT THE BORDER OR SIZING */
+    box-sizing: border-box;
+}
+
+.video-wrapper {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    /* Z INDEX ACTS AS FOREBROUND AND BACKGROUND ACTION IN CSS */
+    z-index: -3;
+  
+}
+/* .video-wrapper {
+    border: 2px solid #000;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+     */
+/* AFFECTS ONLY BODY OF TEXT - ALL FONT WILL FOLLOW SETTINGS BELOW*/
+body {
+    /* ENSURES CONTENT COVERS ENTIRE SCREEN */
+    min-height: 100vh; 
+    /* font-family: "Secular One", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    /* background-image: url(./Background2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    /* ANY IMAGE REPEITITION IS GONE AND PICTURE IS CENTERED */
+}
+/* REFORMATS BACKGROUND OF NAV BAR ITSELF ONLY */
+nav {
+    background-color: #99CCFF;
+    box-shadow: 3px 3px 5px rgba(red, green, blue, alpha);
+}
+/* UNORDERED LIST SPANS ENTIRETY OF WEBPAGE HORIZONTALLY */
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* NAV BAR IS COLOURED, CONTENTS ARE AT THE END OF THE PAGE AND CENTRE OF ITS BOX */
+    /* height: ; */
+
+}
+
+nav li {
+    height: 50px;
+}
+
+/* ADJUSTS LINKS */
+nav a {
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    /* REMOVES UNDERLINE */
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+}
+
+/* ALIGNS ONLY FIRST IN LIST TO THE LEFT*/
+nav li:first-child {
+    margin-right: auto;
+}
+
+
+h1 { 
+    border: 10px cyan;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: "Secular One", sans-serif;
+    font-size: 50px;
+    color: white;
+    text-decoration:overline;
+}
+
+.videobackground1 {
+    margin-top: 40px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    border: 1px dashed lightblue;
+}
+
+.vidbody1 {
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    font-size: 200%;
+    border: 1px lightblue;
+}
+
+.mainbody1 {
+    display: block;
+    /* TEXT BOX DIVISION IS CENTERED AND SOME DISTANCE BELOW THE MAIN HEADING */
+    background-color: lightskyblue;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    justify-content: center;
+    /* font-family: "Roboto, sans-serif"; */
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    font-size: 35;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* CREATION OF SECOND NAVBAR INSIDE DIV SO PREVIOUS DOES NOT ADJUST THIS ITSELF - THIS BAR IS FULLY AT THE BOTTOM AND IS FILLING THE PAGE HORIZONTALLY. */
+
+nav2 {
+    background-color: #99CCFF;
+}
+/* UNORDERED LIST SPANS ENTIRETY OF WEBPAGE HORIZONTALLY */
+nav2 ul {
+    background-color: #99CCFF;
+    /* margin-top: 333px; */
+    margin-bottom: 0px;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* NAV BAR IS COLOURED, CONTENTS ARE AT THE END OF THE PAGE AND CENTRE OF ITS BOX */
+
+}
+
+nav2 li {
+    height: 50px;
+}
+
+/* ADJUSTS LINKS */
+nav2 a {
+    height: 100%;
+    padding: 0 40px;
+    text-decoration: none;
+    /* REMOVES UNDERLINE */
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+nav2 a:hover {
+    background-color: #FFFFFF;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+
+}
+.greecebox {
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border:1px solid #000000;
+
+}
+
+.textforimages {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: ;
+    
+
+}
+.box1 {
+    width: 300px;
+    margin-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 10px;
+}
+
+.box2 {
+    width: 300px;
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+}
+
+.textforimages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box3 {
+    width: 300px;
+    margin-left: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva;
+}
